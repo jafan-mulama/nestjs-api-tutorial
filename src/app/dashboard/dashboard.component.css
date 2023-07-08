@@ -1,0 +1,31 @@
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-button {
+  flex: 0 0 calc(33.33% - 20px);
+  padding: 7px 3px;
+  margin: 5px;
+  background-color: #00b37c;
+  text-emphasis-color: #280273;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 113px;
+  color: white;
+  
+}
+
+.dashboard-button:hover {
+  background-color: #48057b;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard-button {
+    flex: 0 0 calc(40% - 5px);
+  }
+}
